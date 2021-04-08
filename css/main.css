@@ -4,11 +4,13 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
 }
 
 header {
   padding: 20px 25px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,6 +70,7 @@ header {
   background-color: transparent;
   border: none;
   padding: 12px 23px;
+  width: 100%;
 }
 
 .button-search {
@@ -80,10 +83,10 @@ header {
 }
 
 .icon-search {
-  fill: #000;
+  fill: #c2c2c2;
 }
 
-.nav-menu {
+.nav-submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,11 +97,11 @@ header {
 }
 
 .icons-link {
-  opacity: .24;
+  opacity: 0.24;
 }
 
 .icons-link:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .icons-link:not(:last-child) {
@@ -110,5 +113,59 @@ header {
   width: 40px;
   border-radius: 20px;
   margin-left: 40px;
+}
+
+.sidebar {
+  padding-left: 30px;
+}
+
+.nav-menu {
+  margin: 0 0 60px;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 28px;
+  list-style-type: none;
+}
+
+.nav-item svg {
+  margin-right: 13px;
+  fill: #898989;
+  opacity: 1;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.nav-link:hover .nav-text {
+  color: #FF0000;
+}
+
+.nav-link:hover .icon {
+  fill: #FF0000;
+}
+
+.nav-text {
+  color: #898989;
+}
+
+.nav-title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.nav-image {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */
