@@ -9,9 +9,15 @@ body {
 
 header {
     padding: 20px 25px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
 }
 
 .menu-button {
@@ -38,7 +44,7 @@ header {
 }
 
 .input-group {
-    background: #f9f9f9;
+    background: #eeeeee;
     border-radius: 22px;
     display: flex;
     justify-content: space-between;
@@ -95,10 +101,35 @@ header {
 
 .sidebar {
     padding-left: 30px;
+    position: fixed;
+    left: 0;
+    top: 85px;
+    margin-top: 15px;
+    padding-bottom: 0;
+    width: 13.5%;
+    height: calc(100% - 115px);
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.content {
+    width: 100%;
+    margin-top: 85px;
+    padding-left: 15%;
+    padding-top: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 6px; /* ширина для вертикального скролла */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
 }
 
 .nav-menu {
-    // list-style-type: none;
     margin: 0 0 60px;
     padding: 0;
 }
@@ -120,11 +151,11 @@ header {
 }
 
 .nav-link:hover .nav-text {
-    color: #FF0000;
+    color: #ff0000;
 }
 
 .nav-link:hover .icon {
-    fill: #FF0000;
+    fill: #ff0000;
 }
 
 .nav-text {
@@ -141,4 +172,126 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.chanel {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.chanel-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202c;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.chanel-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chanel-text {
+    margin-left: 20px;
+}
+
+.video-thumd {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.video-card {
+    width: 250px;
+}
+
+.video-duration {
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202c;
+    margin: 10px 0 4px;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #c2c2c2;
+}
+
+.video-views {
+    margin-right: 6px;
+}
+
+.video-views::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #c2c2c2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.slider-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+    position: absolute;
+    right: 8%;
+    top: 5px;
+}
+
+.chanel-button-next,
+.chanel-button-next {
+    cursor: pointer;
+}
+
+.recommended {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: #c2c2c2;
+}
+
+.thumbnail-recommended {
+    width: 540px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.video-thumd-recommended {
+    width: 540px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
 }
