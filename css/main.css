@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -314,6 +315,17 @@ header {
   top: 5px;
 }
 
+.subscribe-button {
+  position: absolute;
+  right: 17%;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  top: 2px;
+}
+
 .chanel-button-next,
 .chanel-button-next {
   cursor: pointer;
@@ -342,7 +354,9 @@ header {
   position: relative;
 }
 
-.recomended-slider, .chanel-slider {
+.recomended-slider,
+.chanel-slider,
+.food-slider {
   width: 130%;
 }
 

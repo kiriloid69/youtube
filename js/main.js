@@ -22,14 +22,14 @@ const recomendedSwiper = new Swiper(".recomended-slider", {
   },
 });
 
-const foodSwiper = new Swiper(".chanel-slider", {
+const foodSwiper = new Swiper(".food-slider", {
   // Optional parameters
   loop: true,
   slidesPerView: 6,
 
   // Navigation arrows
   navigation: {
-      nextEl: ".chanel-button-next",
-      prevEl: ".chanel-button-prev",
+      nextEl: ".food-button-next",
+      prevEl: ".food-button-prev",
   },
 });
