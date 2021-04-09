@@ -1,7 +1,7 @@
 const swiper = new Swiper(".chanel-slider", {
     // Optional parameters
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
 
     // Navigation arrows
     navigation: {
@@ -25,7 +25,7 @@ const recomendedSwiper = new Swiper(".recomended-slider", {
 const foodSwiper = new Swiper(".chanel-slider", {
   // Optional parameters
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 6,
 
   // Navigation arrows
   navigation: {
